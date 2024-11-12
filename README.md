@@ -1,1 +1,1 @@
-Task of colleges
+Tasks of institutes
