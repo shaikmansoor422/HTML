@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset width="300">
+      <legend>FORM</legend>
+      <h4>Showing picture by using picture tag:</h4>
+      <picture>
+        <source
+          media="(min-width:480px)"
+          srcset="
+            ./depositphotos_115111594-stock-photo-maharashtrian-or-marathi-food-platter.jpg
+          "
+          height="300"
+        />
+        <source media="(720px)" srcset="DSC_2734.jpg" height="200" />
+        <img
+          src="./delicious-tandoori-chicken-served-on-a-plate-free-photo.jpg"
+          alt="loading"
+          height="300"
+        />
+      </picture>
+      <form action="./action.html">
+        <h4>Choose your options:</h4>
+        <select name="options" id="opt">
+          <option value="option1">Option1</option>
+          <option value="option2">Option2</option>
+          <option value="option3">Option3</option>
+        </select>
+        <input type="submit" /><br /><br />
+
+        <h4>Choose your food:</h4>
+        <select name="food" id="fd">
+          <optgroup label="VEG">
+            <option value="Noodles">Noodles</option>
+            <option value="Momos">Momos</option>
+            <option value="Paneer">Paneer khurma</option>
+          </optgroup>
+          <optgroup label="NON-VEG">
+            <option value="Shawarma">Shawarma</option>
+            <option value="Chicken">Chicken fry</option>
+            <option value="Mutton">Mutton khurma</option>
+          </optgroup>
+        </select>
+        <input type="submit" /><br /><br />
+        <h4>select colour:</h4>
+        <input list="clr" id="" />
+        <datalist name="colour" id="clr">
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="blue">blue</option>
+        </datalist>
+        <input type="submit" /><br /><br />
+        <br />
+        <h4>
+          click on image to see navigation through action and formaction tags:
+        </h4>
+        <input
+          type="image"
+          src="./delicious-tandoori-chicken-served-on-a-plate-free-photo.jpg"
+          name="food"
+          id="food"
+          height="100"
+          width="150"
+        />
+        <br />
+        <h4>1.chicken items</h4>
+        <input
+          type="image"
+          src="./DSC_2734.jpg"
+          height="100"
+          width="150"
+          formaction="./formaction.html"
+        /><br /><br />
+        <h4>2.veg items</h4>
+      </form>
+    </fieldset>
+  </body>
+</html>
